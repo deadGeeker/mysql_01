@@ -1,0 +1,24 @@
+1,11,The three body problem,48
+2,11,The Road,20
+3,11,One Second After,30
+4,11,Brave New World,35
+5,11,At the Earth's Core,40
+6,11,Famous Modern Ghost Stories,55
+7,12,Romeo and Juliet,30
+8,12,Animal Farm,36
+9,12,Great Expectations,50
+10,12,The Pearl,34
+11,12,The Diary of a Young Girl,45
+12,12,Cherry Orchard,55
+13,12,Sorrows of Young Werther,54
+14,13,Psychology and life,50
+15,13,On Being a Therapist,67
+16,13,The Psychology of Helping and Altruism,80
+17,13,Interpersonal Conflict,64 
+18,14,Usborne Beginners Science,100
+19,14,Code Complete,120
+20,14,Programming Pearls,200
+21,14,Clean Code,120
+22,14,Design Patterns,100
+23,15,Best Loved Poems,43
+24,15,The Best Poems of All Time,60
