@@ -1,5 +1,43 @@
 # mysql_01
-#mysql_01
+
+---
+### mysql的安装
+
+--更新apt安装源(这里还是推荐使用官方镜像源)  
+         $ sudo apt-get update
+
+--卸载旧mysql  
+1. 查看MySQL的依赖项：
+         $ dpkg --list|grep mysql  
+2. 卸载： 
+         $ sudo apt-get remove mysql-common
+         $ sudo apt-get remove mysql-server-5.7
+         $ dpkg -l|grep ^rc|awk '{print$2}'|sudo xargs dpkg -P
+
+--安装  
+1. sudo apt-get install mysql-server
+2. 验证安装 
+         $ sudo service mysql status
+
+--启动服务：
+         $ sudo service mysql start
+
+--查看默认配置文件：$ cat /etc/mysql/debian.cnf
+
+--使用配置文件中的用户和密码登录 $ mysql -u debian-sys-maint -p
+
+--进入mysql数据库 $ use mysql
+
+--修改root密码:
+1. $ update mysql.user set authentication_string=password('123456') where user='root' and Host ='localhost'; 
+2. $ update user set plugin="mysql_native_password"; 
+3. $ flush privileges; 
+4. $ quit;
+
+--重启MySQL服务 $ service mysql restart
+
+---
+
 本项目旨在mysql下实现简易的图书管理系统
 一共有三个文本文件【users category books】
 分别表示用户表   图书类别表   现存图书表
